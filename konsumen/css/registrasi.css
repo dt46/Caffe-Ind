@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: #BF3148;
+    background-image: url(../assets/bg-kopi-login.png);
+}
+
+.registrasi::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/bg_3d_kopi_kanan.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .registrasi::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/bg_3d_kopi_kiri.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+.registrasi{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100vh;    
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.registrasi .card-form{
+    border-radius: 1.25em;
+    background: #E6E6E6;
+    margin: auto;
+    max-width: 700px;
+    padding: 1.25em 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.registrasi  .content-form{
+    width: 80%;
+    margin: auto;
+}
+
+
+.registrasi .container .judul-form h2{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #BF3148;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.registrasi .input{
+    width: 100%;
+    height: 3.3em;
+    display: flex;
+    align-items: center;  
+    margin-bottom: 0.5em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #3A3A3A;
+    background-color: transparent;
+}
+
+.registrasi .input input {
+    width: 100%;
+    background-color: #f2507b00;
+    border: none;
+    outline: none;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: #3A3A3A;
+}
+
+.registrasi input::placeholder {
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: #3A3A3A;
+  }
+
+.registrasi .content-form .aturan{
+    width: 100%;
+} 
+
+.registrasi .content-form .aturan p{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 0.81em;
+    color: #3A3A3A;
+    text-align: left;
+    margin: auto 0;
+} 
+
+.registrasi .content-form #button-registrasi{
+    background-color: #F2C029;
+    width: 100%;
+    text-align: center;
+    padding: 0.625em;
+    box-sizing: border-box;
+    border-radius: 0.5em;
+    border: none;
+    margin-top: 1.875em;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0.875em;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.registrasi .content-form a{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    font-size: 0.94rem;
+    color: #F2C029;;
+    opacity: 100%;
+    text-decoration: none;
+}
+.registrasi .content-form p{
+    font-family: "Poppins", Helvetica;
+    font-weight: 300;
+    font-size: 0.94rem;
+    color: #3A3A3A;;
+    opacity: 100%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.registrasi .content-form .register{
+    font-family: "Poppins", Helvetica;
+    font-weight: 300;
+    font-size: 0.94rem;
+    color: #F2C029;;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+/* Tablet */
+@media (max-width: 770px) {
+    html{
+        font-size: 66.75%;      
+    }
+
+    .registrasi .card-form{
+        padding: 3em 0;
+    }
+  
+  }
+  
+  /* Mobile Phone */
+  @media (max-width: 450px) {
+    html{
+      font-size: 55%;
+    }
+  }

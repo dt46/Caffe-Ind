@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #bf3148;
+    background-image: url(../assets/bg-kopi-login-long.png);
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar Start */
+.custom-navbar-bg {
+    border-bottom: 1px solid #ffffff;
+}
+
+.custom-navbar-bg .container-fluid{
+    max-width: 1200px;
+}
+
+.regular-logo {
+    display: block;
+}
+
+.custom-navbar-bg button.navbar-toggler{
+    background-color: #F2C029;
+}
+
+.custom-navbar-bg .nav-item a{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+    opacity: 100%;
+    text-decoration: none;
+    margin: auto;
+}
+
+.custom-navbar-bg .nav-item a.active {
+    color: #F2C029;
+    font-weight: 700;
+}  
+
+.custom-navbar-bg .dropdown li{
+    display: flex;
+    padding: 5px 0px;
+    border-bottom: 1px solid #afafaf;
+}
+
+.custom-navbar-bg .dropdown a{
+    color: white;
+}
+
+.custom-navbar-bg .dropdown img{
+    margin: auto;
+}
+
+.custom-navbar-bg .profile-picture{
+    margin: auto 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+    z-index: 4;
+}
+
+.custom-navbar-bg .dropdown-menu a{
+    color: #3a3a3a;
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+.custom-navbar-bg .dropdown li.logout{
+    border-bottom: none;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.custom-navbar-bg .dropdown .logout a.logout-link{
+    background-color: #BF3148;
+    color: white;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 100%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.navbar-toggler-icon span {
+    background-color: white;
+}
+
+.custom-navbar-bg.navbar-scrolled {
+    background-color: #BF3148;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+/* Navbar End */
+
+/* Profil User Start */
+.user{
+    display: flex;
+    flex-direction: column;    
+}
+
+.user a{
+    text-decoration: none;
+}
+
+.user img{
+    z-index: -1;
+}
+
+.user .top-right{
+    margin: 0 0 auto auto;
+}
+
+.user .bottom-left{
+    margin: auto auto 0 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: -452px auto;
+    display: flex;  
+}
+
+.user .card-user{
+    border-radius: 30px;
+    background: #E6E6E6;
+    margin: auto;        
+    width: 719px;
+    min-height:477px;
+    padding: 30px 0 30px 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.user .content-card{
+    margin: 0 auto auto auto;
+    width: 93%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user .header{
+    display: flex;    
+    width: 100%;
+}
+
+.user .header img{
+    width: 250px;
+    margin: auto auto auto 0;    
+    z-index: 4;
+}
+
+.user .header h1{
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    color: #bf3148;
+    font-size: 40px;
+    margin: auto;
+}
+
+.user .header a{
+    margin: auto 0;
+}
+
+.user .header i{
+    color: #bf3148;
+    font-size: 30px;
+    margin: auto 0;
+}
+
+.user .data-caffenchat{
+    display: flex;
+    flex-direction: column;
+}
+
+.user .profil{
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    gap: 20px;
+}
+
+.user .profil .teks{
+    margin: auto;
+}
+
+.user .profil h2{
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    color: #bf3148;
+    font-size: 25px;
+    margin: auto 0;
+}
+
+.user .profil h3{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: #3a3a3a;
+    font-size: 20px;
+    margin: auto 0;
+}
+
+.user .profile-picture-header{
+    width: 77px;
+    height: 77px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: auto;
+    z-index: 4;
+}
+
+.user .data-caffenchat h2.judul{
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    color: #BF3148;
+    font-size: 30px;
+    margin: 40px auto 15px auto ;
+    text-align: center;
+}
+
+.user .content-history{
+    width: 90%;
+    margin: auto;
+}
+
+.user .tab{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    transition: 0.3s;
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    color: rgba(160, 160, 160, 0.8);
+    font-size: 25px;
+}
+
+.tab button.active {
+    border-bottom: 3px solid #F2C029;
+    color: #3a3a3a;
+}
+
+.user a{
+    text-decoration: none;
+}
+
+.user .tabcontent{
+    margin-top: 15px;
+}
+
+/* Riwayat Topic Start */
+.user .topic{
+    margin: auto auto auto 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 97%;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.4);
+}
+
+.user .topic .profil{
+    display: flex;
+    gap: 0;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.user .profil .akun{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.user .topic .profile-topic{
+    margin: 0 0 auto 0;
+    width: 47px;
+    height: 47px;
+    border-radius: 50px;
+    object-fit: cover;
+    z-index: 4;
+}
+  
+.user .topic .badge-profil{
+    margin: 0 0 auto 0;
+    width: 35px;
+    z-index: 1;
+}
+
+.user .topic .akun h3{
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    color: #BF3148;
+    font-size: 20px;
+    margin: auto 0;
+}
+  
+.user .topic .akun h4{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: #3a3a3a;
+    font-size: 15px;
+    margin: auto 0;
+}
+
+.user .topic .teks-topic{
+    width: 90%;
+    margin: auto 0 auto auto;
+}
+
+.user .topic .bot-topic{    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto 20px auto 0;
+}
+  
+.user .topic .bot-topic .left-bottopic{
+    display: flex;
+    gap: 10px;
+}
+
+.user .topic .bot-topic .left-bottopic .replier-topic{
+    display: flex;
+    gap: 5px;
+}
+
+.user .topic .bot-topic .left-bottopic .like-topic{
+    display: flex;
+    gap: 5px;
+}
+
+.user .topic .right-bottopic{
+    display: flex;
+    gap: 5px;
+}
+
+.user .teks-topic h4{
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    color: #3a3a3a;
+    font-size: 17px;
+    margin: auto 0;
+}
+
+.user .bot-topic p{
+    font-family: "Poppins", Helvetica;
+    font-weight: 400;
+    color: #3a3a3a;
+    font-size: 15px;
+    margin: auto 0;
+}
+
+.user .like-topic i{
+    color: #F2C029;
+    font-size: 20px;
+    margin: auto;
+}
+
+.user .line-time-post-topic{
+    height: 15px;
+    margin: auto;
+    width: 1px;
+    background-color: rgba(129, 129, 129, 0.4);
+    margin: auto 0;
+    border: 0;
+    opacity: 100%;
+}
+/* Riwayat Topic End */
+
+/* Riwayat Balasan Start */
+.user .reply{
+    border-bottom: 1px solid rgba(129, 129, 129, 0.4);
+    padding: 10px 0;
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+}
+
+.user .reply .top-reply{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.user .reply .balas-ke{
+    display: flex;
+    width: fit-content;
+}
+
+.user .reply .balas-ke .akun{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.user .reply .profil{
+    display: flex;
+    gap: 0;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.user .profil .akun{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.user .reply .profil i{
+    color: #F2C029;
+    font-size: 30px;
+    margin: auto 5px auto 10px;
+    transform: scaleY(-1) rotate(-90deg);
+}
+
+.user .reply .profile-reply{
+    margin: 0 0 auto 0;
+    width: 47px;
+    height: 47px;
+    border-radius: 50px;
+    object-fit: cover;
+    z-index: 4;
+}
+  
+.user .reply .badge-profil{
+    margin: 0 0 auto 0;
+    width: 35px;
+    z-index: 1;
+}
+
+.user .reply .akun h3{
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    color: #BF3148;
+    font-size: 20px;
+    margin: auto 0;
+}
+  
+.user .reply .akun h4{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: #3a3a3a;
+    font-size: 15px;
+    margin: auto 0;
+}
+
+
+.user .reply .teks-reply{
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    margin: auto 0 auto auto;
+}
+
+.user .reply .time-reply{
+    display: flex;
+    gap: 5px;
+    margin: auto 0 auto auto;
+}
+  
+.user .reply .teks-reply h4{
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    color: #3a3a3a;
+    font-size: 17px;
+}
+  
+.user .reply .teks-reply p{
+    font-family: "Poppins", Helvetica;
+    font-weight: 400;
+    color: #3a3a3a;
+    font-size: 15px;
+    margin: auto 0;
+}

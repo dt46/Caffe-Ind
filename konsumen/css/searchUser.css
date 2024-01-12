@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #bf3148;
+    background-image: url(../assets/bg-kopi-login-long.png);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+/* Navbar Start */
+.custom-navbar-bg {
+    border-bottom: 1px solid #ffffff;
+    background-color: #BF3148;
+    width: 100vw;
+}
+
+.custom-navbar-bg .container-fluid{
+    max-width: 90%;
+}
+
+.regular-logo {
+    display: block;
+    width: 80%;
+}
+
+.custom-navbar-bg button.navbar-toggler{
+    background-color: #F2C029;
+}
+
+.custom-navbar-bg .nav-item a{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: white;
+    font-size: 1rem;
+    opacity: 100%;
+    text-decoration: none;
+    margin: auto;
+}
+
+.custom-navbar-bg .nav-item a.active {
+    color: #F2C029;
+    font-weight: 700;
+}  
+
+.custom-navbar-bg .dropdown li{
+    display: flex;
+    padding: 5px 0px;
+    border-bottom: 1px solid #afafaf;
+}
+
+.custom-navbar-bg .dropdown a{
+    color: white;
+}
+
+.custom-navbar-bg .dropdown img{
+    margin: auto;
+}
+
+.custom-navbar-bg .profile-picture{
+    margin: auto 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+    z-index: 4;
+}
+
+.custom-navbar-bg .dropdown-menu a{
+    color: #3a3a3a;
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    font-size: 1rem;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+.custom-navbar-bg .dropdown li.logout{
+    border-bottom: none;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.custom-navbar-bg .dropdown .logout a.logout-link{
+    background-color: #BF3148;
+    color: white;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 1.25rem;
+    opacity: 100%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.navbar-toggler-icon span {
+    background-color: white;
+}
+
+.custom-navbar-bg.navbar-scrolled {
+    background-color: #BF3148;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+/* Navbar End */
+
+/* Search User Start */
+.search::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/bg_3d_kopi_kanan.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .search::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/bg_3d_kopi_kiri.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+.search{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    flex: 1;
+    
+}
+
+.search a{
+    text-decoration: none;
+}
+
+.container {
+    display: flex;  
+}
+
+.search .card-search{
+    border-radius: 30px;
+    background: #E6E6E6;
+    margin: auto;        
+    width: 719px;
+    height: 473px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.search .search-bar{
+    width: 90%;
+    height: 3.125em;
+    border: 1px solid #bf3148;
+    border-radius: 30px;
+    margin: 1.875em auto 1.875em auto;
+    display: flex;
+}
+
+.search .search-bar .fa-magnifying-glass{
+    color: #bf3148;
+    font-size: 1.25rem;
+    margin: auto 0 auto 20px;
+}
+
+.search .search-bar input {
+    background-color: transparent;
+    width: 520px;
+    border: none;
+    outline: none;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #3A3A3A;
+    margin: auto auto auto 10px;
+}
+
+.search-bar input::placeholder {
+    font-family: "Poppins", Helvetica;
+    font-weight: 400;
+    color: #bf3148;
+    font-size: 1.25rem;    
+}
+
+.search .search-bar button{
+    border: none;
+    background-color: transparent;
+    height: fit-content;
+    margin: auto 20px auto auto;
+}
+
+.search .search-bar .fa-xmark{
+    color: #bf3148;
+    font-size: 1.25rem;
+}
+
+.search .data-konsumen{
+    width: 90%;
+    flex: 1;
+    overflow-y: hidden;
+    margin: 0 auto 20px auto;
+}
+
+
+.search .data-konsumen .history{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.search .history::-webkit-scrollbar {
+    width: 5px;
+}
+  
+.search .history::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 5px;
+}
+  
+.search .history::-webkit-scrollbar-thumb {
+    background: #F2C029;
+    border-radius: 5px;
+}
+
+.search .data-konsumen .user{
+    display: flex;
+    gap: 0.6em;
+    padding-bottom: 1%;
+    border-bottom: 1px solid #afafaf;
+    width: 97.4%;
+}
+
+.search .profile-picture{
+    width: 2.68em;
+    height: 2.68em;
+    object-fit: cover;
+    border-radius: 30px;
+    margin: 0;
+    z-index: 4;
+}
+
+.search .username-name{
+    margin: auto 0;
+}
+
+.search .user .fa-xmark{
+    color: #3A3A3A;
+    font-size: 1.25rem;
+    margin: auto 0;
+}
+
+.search .data-konsumen h3{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #bf3148;
+}
+
+.search .data-konsumen h5{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 1.06rem;
+    color: #3A3A3A;
+    margin: auto 0;
+}
+
+.search .data-konsumen p{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 0.94rem;
+    color: rgba(58, 58, 58, 0.70);
+    margin: auto 0;
+}
+/* Search User End */
+
+/* Tablet */
+@media (max-width: 770px) {
+    html{
+        font-size: 66.75%;      
+    }
+  
+    .navbar-collapse{
+        background-color: #bf3148;
+        border-radius: 1em;
+        padding: 2em;
+      }
+    
+      .custom-navbar-bg ul{
+        gap: 1em;
+      }
+  
+      .custom-navbar-bg .nav-item a{
+        color: #ffffff;
+      }
+  
+      .custom-navbar-bg a.nav-button{
+        color: white;
+      }
+
+      .custom-navbar-bg .dropdown a{
+        color: #3A3A3A;
+    }
+
+    .search{
+        padding: 10% 0;
+    }
+
+    .search .container{
+        height: 100%;
+    }
+  
+    .search .card-search{
+        width: 100%;
+        margin: auto;
+        height: 100%;
+        border-radius: 20px;
+    }
+  
+  }
+  
+  /* Mobile Phone */
+  @media (max-width: 450px) {
+    html{
+      font-size: 55%;
+    }
+  }

@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #bf3148;  
+  max-width: 100%;
+
+}
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+/* Navbar Start */
+.custom-navbar-bg {
+  border-bottom: 1px solid #ffffff;
+  position: fixed;
+  width: 100vw;
+}
+
+.custom-navbar-bg .container-fluid{
+  max-width: 90%;
+}
+
+.regular-logo {
+  display: block;
+  width: 6.25em;
+}
+
+.custom-navbar-bg button.navbar-toggler{
+  background-color: #F2C029;
+}
+
+.custom-navbar-bg .nav-item a{
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: white;
+  font-size: 1rem;
+  opacity: 100%;
+  text-decoration: none;
+  margin: auto;
+}
+
+.custom-navbar-bg .nav-item a.active {
+  color: #F2C029;
+  font-weight: 700;
+}  
+
+.custom-navbar-bg .nav-button{
+  background-color: #F2C029;
+  padding: 7px 14px;
+  border-radius: 7px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.custom-navbar-bg.navbar-scrolled .nav-item a.nav-button {
+  color: #ffffff; 
+}
+
+.custom-navbar-bg.navbar-scrolled {
+  background-color: #BF3148;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+/* Navbar End */
+
+/* Menu Start */
+.menu{
+  display: flex;
+  margin-bottom: 50px;
+  background-image: url(../assets/bg-kopi-login-long.png);
+}
+
+.menu .container{
+  display: flex;
+  flex-direction: column;
+  margin: 7em auto auto auto;
+}
+
+.menu h3{
+  font-family: "Poppins", Helvetica;
+  font-weight: 700;
+  font-size: 3.125rem;
+  color: #ffffff;
+  text-align: center;
+  margin: auto auto 2em auto;
+}
+
+.menu .cards-menu{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.menu .card-menu{
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(6.800000190734863px);
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.menu .content-card{
+  display: flex;
+  gap: 5%;
+  width: 90%;
+  margin: auto;
+}
+
+.menu .content-card img{
+  min-width: 15%;
+  max-height: 20%;
+  margin: auto;
+}
+
+.menu .content-card .teks{
+  margin: auto;
+}
+
+.menu .teks h4{
+  font-family: "Poppins", Helvetica;
+  font-weight: 800;
+  font-size: 2.19rem;
+  color: #ffffff;
+  margin: auto auto 10px 0;
+}
+
+.menu .teks p{
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  font-size: 1.56rem;
+  color: #ffffff;
+  margin: auto auto auto 0;
+}
+/* Menu End */
+
+/* Footer Start */
+footer::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 20%; 
+  top: -5%; 
+  background-image: url(../assets/tekstur\ kertas\ merah.png);
+  background-position: center;
+  background-size: cover;
+  transform: rotate(180deg);
+}
+
+footer{
+  position: relative;
+  background-color: black;
+  background-image: url("../assets/vektor\ kopi\ footer.png");
+}
+
+footer h4{
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+
+footer h5{
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 5px;
+}
+
+footer p{
+  margin: auto auto auto 0;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: rgb(255, 255, 255);
+}
+
+footer .container{
+  display: flex;
+  flex-direction: column;
+}
+
+footer .row1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 130px auto 50px auto;
+}
+
+footer .col{
+  width: auto;
+}
+
+footer .row-icon{
+  display: flex;
+  gap: 10px;
+}
+
+footer #col1 #location img{
+  margin: 0 0 auto 0;
+}
+
+footer #col2 p{
+  margin-bottom: 25px;
+}
+
+footer .socialmedia{
+  display: flex;
+  gap: 19px;
+}
+
+footer #col3 #KopInTouch{
+  margin-bottom: 5px;
+}
+
+footer #col3 #location img{
+  margin: 0 0 auto 0;
+}
+
+footer #col3 #open-hours{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 13px;
+}
+
+footer #col3 #location{
+  display: flex;
+  flex-direction: column;
+}
+
+footer .row2{
+  margin: auto;
+}
+
+footer .row2 hr{
+  position: relative;
+  bottom: 10px;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  z-index: 2;
+  border: 0;
+}
+
+footer .row2 p{
+  text-align: center;
+}
+
+footer .row2 span{
+  color: #bf3148;
+  font-weight: 700;
+}
+/* Footer End */
+
+/* Tablet */
+@media (max-width: 750px) {
+  html{
+      font-size: 66.75%;
+  }
+
+  .navbar-collapse{
+      background-color: #ffffff;
+      border-radius: 1em;
+      padding: 2em;
+    }
+  
+    .custom-navbar-bg ul{
+      gap: 1em;
+    }
+
+    .custom-navbar-bg .nav-item a{
+      color: #3a3a3a;
+    }
+
+    .custom-navbar-bg a.nav-button{
+      color: white;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html{
+    font-size: 55%;
+  }
+
+  .menu .card-menu{
+      min-height: 200px;
+  }
+}

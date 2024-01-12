@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+body{
+    background-color: #BF3148;
+    background-image: url(../assets/bg-kopi-login-long.png);    
+}
+  
+/* Navbar Start */
+.custom-navbar-bg {
+    background-color: #BF3148;
+    border-bottom: 1px solid #ffffff;
+}
+
+.custom-navbar-bg .container-fluid{
+    max-width: 1200px;
+}
+
+.regular-logo {
+  display: block;
+}
+
+.scrolled-logo {
+  display: none;
+}
+
+.custom-navbar-bg button.navbar-toggler{
+  background-color: #F2C029;
+}
+
+.custom-navbar-bg .nav-item a{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+    opacity: 100%;
+    text-decoration: none;
+    margin: auto;
+}
+
+.custom-navbar-bg .nav-item a.active {
+    color: #F2C029;
+    font-weight: 700;
+}  
+
+.custom-navbar-bg .dropdown li{
+    display: flex;
+    padding: 5px 0px;
+    border-bottom: 1px solid #afafaf;
+}
+
+.custom-navbar-bg .dropdown a{
+    color: white;
+}
+
+.custom-navbar-bg .dropdown img{
+    margin: auto;
+}
+
+.custom-navbar-bg .profile-picture{
+    margin: auto 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+    z-index: 4;
+}
+
+.custom-navbar-bg .dropdown-menu a{
+    color: #3a3a3a;
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+.custom-navbar-bg .dropdown li.logout{
+    border-bottom: none;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.custom-navbar-bg .dropdown .logout a.logout-link{
+    background-color: #BF3148;
+    color: white;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 100%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.navbar-toggler-icon span {
+    background-color: white;
+}
+
+.custom-navbar-bg.navbar-scrolled {
+  background-color: #ffffff;
+  border-bottom: 1px solid #BF3148;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-navbar-bg.navbar-scrolled .nav-item a {
+  color: #333; 
+}
+
+.custom-navbar-bg.navbar-scrolled .nav-item a.active {
+  color: #bf3148;
+}
+/* Navbar End */
+
+/* Landing Page Start */
+.landing-page{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-page a{
+    text-decoration: none;
+}
+
+.landing-page .top-right{
+    margin: 0 0 auto auto;
+}
+
+.landing-page .bottom-left{
+    width: 600px;
+    margin: auto auto 0 0;
+}
+
+.landing-page img{
+    margin: auto 0 auto 10px;    
+}
+
+.landing-page .container{
+    margin: -445px auto -311px auto;
+    z-index: 5;
+    display: flex;
+}
+
+/* Menu Admin Start */
+.landing-page .menu{
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.landing-page .card-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(6.800000190734863px);
+    width: 315px;
+    height: 430px;
+}
+
+.landing-page .card-menu .notification{
+    background-color: #4B8DD7;
+    width: fit-content;
+    max-width: 90%;
+    border-radius: 0px 20px 0px 20px;
+    padding: 10px 15px;
+    position: relative;
+    bottom: 5%;
+    left: 1px;
+    margin: 0 0 0 auto;
+}
+
+.landing-page .card-menu .notification p{
+    color: white;
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    font-size: 15px;
+    margin: auto 0;
+}
+
+.landing-page .card-menu img{
+    width: 270px;
+    margin: auto auto 25px auto;
+}
+
+.landing-page .card-menu .teks{
+    margin: 0 20px 40px 20px;
+}
+
+.landing-page .card-menu .teks h2{
+    color: white;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 26px;
+    margin: auto 0;
+}
+
+.landing-page .card-menu .teks h3{
+    color: white;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    font-size: 14px;
+    margin: auto 0;
+}
+/* Menu Admin End */
+/* Landing Page End */

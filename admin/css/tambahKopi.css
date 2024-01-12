@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #bf3148;
+    background-image: url(../assets/bg-kopi-login-long.png);
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar Start */
+.custom-navbar-bg {
+    border-bottom: 1px solid #ffffff;
+}
+
+.custom-navbar-bg .container-fluid{
+    max-width: 1200px;
+}
+
+.regular-logo {
+    display: block;
+}
+
+.custom-navbar-bg button.navbar-toggler{
+    background-color: #F2C029;
+}
+
+.custom-navbar-bg .nav-item a{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+    opacity: 100%;
+    text-decoration: none;
+    margin: auto;
+}
+
+.custom-navbar-bg .nav-item a.active {
+    color: #F2C029;
+    font-weight: 700;
+}  
+
+.custom-navbar-bg .dropdown li{
+    display: flex;
+    padding: 5px 0px;
+    border-bottom: 1px solid #afafaf;
+}
+
+.custom-navbar-bg .dropdown a{
+    color: white;
+}
+
+.custom-navbar-bg .dropdown img{
+    margin: auto;
+}
+
+.custom-navbar-bg .profile-picture{
+    margin: auto 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+    z-index: 4;
+}
+
+.custom-navbar-bg .dropdown-menu a{
+    color: #3a3a3a;
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+.custom-navbar-bg .dropdown li.logout{
+    border-bottom: none;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.custom-navbar-bg .dropdown .logout a.logout-link{
+    background-color: #BF3148;
+    color: white;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 100%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.navbar-toggler-icon span {
+    background-color: white;
+}
+
+.custom-navbar-bg.navbar-scrolled {
+    background-color: #BF3148;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+/* Navbar End */
+
+/* Profil User Start */
+.kopi{
+    display: flex;
+    flex-direction: column;    
+}
+
+.kopi a{
+    text-decoration: none;
+}
+
+.kopi img{
+    z-index: -1;
+}
+
+.kopi .top-right{
+    margin: 0 0 auto auto;
+}
+
+.kopi .bottom-left{
+    margin: auto auto 0 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: -452px auto;
+    display: flex;  
+}
+
+.kopi .card-kopi{
+    border-radius: 30px;
+    background: #E6E6E6;
+    margin: auto;        
+    width: 719px;
+    padding: 30px 0 30px 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.kopi .content-card{
+    margin: auto;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.kopi .header{
+    display: flex;    
+    width: 100%;
+}
+
+.kopi .header img{
+    width: 250px;
+    margin: auto auto auto 0;    
+    z-index: 4;
+}
+
+.kopi .header h1{
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    color: #bf3148;
+    font-size: 40px;
+    margin: auto;
+}
+
+.kopi .header a{
+    margin: auto 0;
+}
+
+.kopi .header i{
+    color: #bf3148;
+    font-size: 30px;
+    margin: auto 0;
+}
+
+
+
+.kopi .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.kopi .container .judul-form h2{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 40px;
+    color: #BF3148;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.kopi .form img{
+    margin: 30px auto;
+    z-index: 4;
+    width: 135px;
+}
+
+.kopi .input{
+    margin: auto;
+    width: 520px;
+    height: auto; 
+    margin-bottom: 8px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #3A3A3A;
+    background-color: transparent;
+}
+
+.kopi .form .input h4{
+    font-family: "Poppins";
+    font-family: 600;
+    font-size: 20px;
+    color: #BF3148;
+}
+
+.kopi .form .input-jenispenyajian h4{
+    font-family: "Poppins";
+    font-family: 600;
+    font-size: 20px;
+    color: #BF3148;
+}
+
+.kopi .form .input-jenispenyajian label{
+    font-family: "Poppins";
+    font-family: 300;
+    font-size: 20px;
+    color: #3A3A3A;
+}
+
+.kopi .form .input-jenisbijikopi h4{
+    font-family: "Poppins";
+    font-family: 600;
+    font-size: 20px;
+    color: #BF3148;
+}
+
+.kopi .form .input-jenisbijikopi label{
+    font-family: "Poppins";
+    font-family: 300;
+    font-size: 20px;
+    color: #3A3A3A;
+}
+
+.kopi .form .input-teknikpenyeduhan h4{
+    font-family: "Poppins";
+    font-family: 600;
+    font-size: 20px;
+    color: #BF3148;
+}
+
+.kopi .form .input-teknikpenyeduhan label{
+    font-family: "Poppins";
+    font-family: 300;
+    font-size: 20px;
+    color: #3A3A3A;
+}
+
+.kopi .input .detail{
+    display: flex;
+    width: 100%;
+}
+
+.kopi .detail p{
+    font-family: "Poppins";
+    font-family: 500;
+    font-size: 20px;
+    color: #BF3148;
+    margin: auto 0;
+    width: 150px;
+}
+
+.kopi .detail input {
+    width: 380px !important;
+    margin: auto 0 auto auto;
+}
+
+.kopi .form .input-bahantambahan h4{
+    font-family: "Poppins";
+    font-family: 600;
+    font-size: 20px;
+    color: #BF3148;
+}
+
+.kopi .form .input-bahantambahan .form-check{
+    display: flex;
+    gap: 10px;
+}
+
+.kopi .form .input-bahantambahan label{
+    font-family: "Poppins";
+    font-family: 300;
+    font-size: 20px;
+    color: #3A3A3A;
+}
+
+.form-check-input:checked[type="checkbox"] {
+    background-color: #F2C029;
+    border-color: #F2C029;
+    width: 18px;
+    height: 18px;
+    margin-top: 6px;
+    position: relative;
+    right: 1px;
+}
+
+.form-check-input[type="checkbox"]:not(:checked) {
+    background-color: transparent;
+    border-color: #3A3A3A;
+    width: 18px;
+    height: 18px;
+    margin-top: 7px;
+}
+
+.kopi .input-bahantambahan input#takaranCokelat, input#takaranMatcha, input#takaranIcecream {
+    background-color: #f2507b00;
+    width: 75% !important;
+    border: none;
+    outline: none;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 20px;
+    color: #3A3A3A;
+    margin: auto 0 auto auto;
+    display: none;
+}
+
+.kopi .input-bahantambahan input::placeholder {
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #3A3A3A;
+}
+
+.form-check-input:checked[type="radio"] {
+    background-color: #F2C029;
+    border-color: #F2C029;
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+    position: relative;
+    right: 1px;
+}
+
+.form-check-input[type="radio"]:not(:checked) {
+    background-color: transparent;
+    border-color: #3A3A3A;
+    width: 18px;
+    height: 18px;
+    margin-top: 7px;
+}
+
+.form-check-input:checked[type="checkbox"] {
+    background-color: #F2C029;
+    border-color: #F2C029;
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+    position: relative;
+    right: 1px;
+}
+
+.form-check-input[type="checkbox"]:not(:checked) {
+    background-color: transparent;
+    border-color: #3A3A3A;
+    width: 18px;
+    height: 18px;
+    margin-top: 7px;
+}
+
+
+.kopi .input input {
+    background-color: #f2507b00;
+    width: 520px;
+    border: none;
+    outline: none;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 20px;
+    color: #3A3A3A;
+}
+
+.kopi .input textarea {
+    background-color: #f2507b00;
+    width: 520px;
+    min-height: 10px;
+    height: 100px;
+    border: none;
+    outline: none;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 20px;
+    color: #3A3A3A;
+}
+
+.kopi textarea::-webkit-scrollbar {
+    width: 5px;
+}
+  
+.kopi textarea::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 5px;
+}
+  
+.kopi textarea::-webkit-scrollbar-thumb {
+    background: #F2C029;
+    border-radius: 5px;
+}
+
+.kopi input::placeholder {
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #3A3A3A;
+}
+
+.kopi .form #button-submit-kopi{
+    background-color: #F2C029;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}

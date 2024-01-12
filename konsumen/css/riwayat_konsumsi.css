@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #bf3148;
+    background-image: url(../assets/bg-kopi-login-long.png);
+    overflow-x: hidden;
+}
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+/* Navbar Start */
+.custom-navbar-bg {
+    border-bottom: 1px solid #ffffff;
+    width: 100vw;
+}
+
+.custom-navbar-bg .container-fluid{
+    max-width: 90%;
+}
+
+.regular-logo {
+    display: block;
+    width: 6.25em;
+}
+
+.custom-navbar-bg button.navbar-toggler{
+    background-color: #F2C029;
+}
+
+.custom-navbar-bg .nav-item a{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: white;
+    font-size: 1rem;
+    opacity: 100%;
+    text-decoration: none;
+    margin: auto;
+}
+
+.custom-navbar-bg .nav-item a.active {
+    color: #F2C029;
+    font-weight: 700;
+}  
+
+.custom-navbar-bg .dropdown li{
+    display: flex;
+    padding: 5px 0px;
+    border-bottom: 1px solid #afafaf;
+}
+
+.custom-navbar-bg .dropdown a{
+    color: white;
+}
+
+.custom-navbar-bg .dropdown img{
+    margin: auto;
+}
+
+.custom-navbar-bg .profile-picture{
+    margin: auto 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+    z-index: 4;
+}
+
+.custom-navbar-bg .dropdown-menu a{
+    color: #3a3a3a;
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    font-size: 1rem;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+.custom-navbar-bg .dropdown li.logout{
+    border-bottom: none;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.custom-navbar-bg .dropdown .logout a.logout-link{
+    background-color: #BF3148;
+    color: white;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 1.25rem;
+    opacity: 100%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.navbar-toggler-icon span {
+    background-color: white;
+}
+
+.custom-navbar-bg.navbar-scrolled {
+    background-color: #BF3148;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+/* Navbar End */
+
+/* Riwayat Konsumsi Start */
+.riwayat{
+  min-height: 80vh;
+    margin: 50px 0;
+}
+
+.riwayat a{
+    text-decoration: none;
+}
+
+.riwayat h3{
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 3.125rem;
+    color: #ffffff;
+    text-align: center;
+    margin: auto auto 50px auto;
+}
+
+.riwayat .accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.riwayat .accordion-item {
+    background-color: #ebebeb;
+    border-color: #b4b4b4;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.riwayat .accordion-button {
+    background-color: #d9d9d9;    
+}
+
+.accordion-button:focus {
+    outline: none; 
+    box-shadow: none;
+}
+
+.riwayat .accordion .date{
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 1.875rem;
+    color: #bf3148;
+    margin: auto;
+}
+
+.riwayat .accordion .status{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #000;  
+    margin: auto;
+}
+
+/* Isi Accordion Start */
+.riwayat .accordion .coffee{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(58, 58, 58, 0.20);
+}
+
+.riwayat .accordion .informasi-coffee{
+    display: flex;
+    gap: 20px;
+    margin: auto 0;
+}
+
+.riwayat .accordion .informasi-coffee img{
+    width: 4.68em;
+    margin: auto 0;
+}
+
+.riwayat .informasi-coffee .info-coffee{
+    margin: auto 0;
+}
+
+.riwayat .informasi-coffee ul{
+    display: flex;
+    gap: 50px;
+    margin: auto 0;
+}
+
+.riwayat .informasi-coffee .info-kafein-gula{
+    display: flex;
+    gap: 20px;
+}
+
+.riwayat .additional{
+    display: flex;
+    gap: 0;
+  }
+  
+  .riwayat .additional p{
+    font-family: "Poppins", Helvetica;
+    color: #1e1b1b;
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin: auto 0;
+  }
+  
+  .riwayat .additional ul{
+    margin: auto 0;
+    display: flex;
+  }
+  
+  .riwayat .additional li{
+    font-family: "Poppins", Helvetica;
+    color: #1e1b1b;
+    font-weight: 400;
+    font-size: 1.125rem;
+    margin: auto 0;
+  }
+
+.riwayat .informasi-coffee h5{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.875rem;
+    color: #3a3a3a;  
+    margin: auto 0;
+}
+
+.riwayat .informasi-coffee span{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #3a3a3a;  
+    margin: auto 0;
+}
+
+.riwayat .informasi-coffee li, p{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #3a3a3a;  
+    margin: auto 0;
+}
+
+.riwayat .coffee .date{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #3a3a3a;  
+    margin: auto 0 auto auto;
+}
+
+.riwayat .coffee .button-coffee{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0 auto auto;
+}
+
+.riwayat .coffee .button-edit{
+    display: flex;
+    gap: 10px;
+    border: 3px solid #F2C029;
+    width: 8.12em;
+    height: 3.125em;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.riwayat .button-edit p{
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    color: #F2C029;
+    font-size: 1.25rem;
+    margin: auto auto auto 0;
+}
+
+.riwayat  .button-edit i{
+    color: #F2C029;
+    font-size: 1.25rem;
+    margin: auto 0 auto auto;
+}
+
+.riwayat .coffee .button-delete{
+    display: flex;
+    gap: 10px;
+    border: 3px solid #bf3148;
+    width: 8.12em;
+    height: 3.125em;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.riwayat .button-delete p{
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    color: #bf3148;
+    font-size: 1.25rem;
+    margin: auto auto auto 0;
+}
+
+.riwayat  .button-delete i{
+    color: #bf3148;
+    font-size: 1.25rem;
+    margin: auto 0 auto auto;
+}
+
+/* Isi Accordion End */
+/* Riwayat Konsumsi End */
+
+/* Footer Start */
+footer::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20%; 
+    top: -5%; 
+    background-image: url(../assets/tekstur\ kertas\ merah.png);
+    background-position: center;
+    background-size: cover;
+    transform: rotate(180deg);
+  }
+  
+  footer{
+    position: relative;
+    background-color: black;
+    background-image: url("../assets/vektor\ kopi\ footer.png");
+  }
+  
+  footer h4{
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+  }
+  
+  footer h5{
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+  }
+  
+  footer p{
+    margin: auto auto auto 0;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: rgb(255, 255, 255);
+  }
+  
+  footer .container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer .row1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 130px auto 50px auto;
+  }
+  
+  footer .col{
+    width: auto;
+  }
+  
+  footer .row-icon{
+    display: flex;
+    gap: 10px;
+  }
+  
+  footer #col1 #location img{
+    margin: 0 0 auto 0;
+  }
+  
+  footer #col2 p{
+    margin-bottom: 25px;
+  }
+  
+  footer .socialmedia{
+    display: flex;
+    gap: 19px;
+  }
+  
+  footer #col3 #KopInTouch{
+    margin-bottom: 5px;
+  }
+  
+  footer #col3 #location img{
+    margin: 0 0 auto 0;
+  }
+  
+  footer #col3 #open-hours{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 13px;
+  }
+  
+  footer #col3 #location{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer .row2{
+    margin: auto;
+  }
+  
+  footer .row2 hr{
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    z-index: 2;
+    border: 0;
+  }
+  
+  footer .row2 p{
+    text-align: center;
+  }
+  
+  footer .row2 span{
+    color: #bf3148;
+    font-weight: 700;
+  }
+  /* Footer End */
+
+  /* Tablet */
+@media (max-width: 770px) {
+    html{
+      font-size: 66.75%;
+    }
+  
+    .navbar-collapse{
+      background-color: #ffffff;
+      border-radius: 1em;
+      padding: 2em;
+    }
+  
+    .custom-navbar-bg ul{
+      gap: 1em;
+    }
+  
+    .custom-navbar-bg .nav-item a{
+      color: #3a3a3a;
+    }
+  
+    .custom-navbar-bg a.nav-button{
+      color: white;
+    }    
+  }
+  
+  /* Mobile Phone */
+  @media (max-width: 450px) {
+    html{
+      font-size: 55%;
+    }
+  }

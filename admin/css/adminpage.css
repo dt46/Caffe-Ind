@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+body{
+    background-color: #BF3148;
+    background-image: url(../assets/bg-kopi-login-long.png);  
+    overflow-y: hidden;  
+}
+  
+/* Navbar Start */
+.custom-navbar-bg {
+    background-color: #BF3148;
+    border-bottom: 1px solid #ffffff;
+}
+
+.custom-navbar-bg .container-fluid{
+    max-width: 1200px;
+}
+
+.regular-logo {
+  display: block;
+}
+
+.scrolled-logo {
+  display: none;
+}
+
+.custom-navbar-bg button.navbar-toggler{
+  background-color: #F2C029;
+}
+
+.custom-navbar-bg .nav-item a{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+    opacity: 100%;
+    text-decoration: none;
+    margin: auto;
+}
+
+.custom-navbar-bg .nav-item a.active {
+    color: #F2C029;
+    font-weight: 700;
+}  
+
+.custom-navbar-bg .dropdown li{
+    display: flex;
+    padding: 5px 0px;
+    border-bottom: 1px solid #afafaf;
+}
+
+.custom-navbar-bg .dropdown a{
+    color: white;
+}
+
+.custom-navbar-bg .dropdown img{
+    margin: auto;
+}
+
+.custom-navbar-bg .profile-picture{
+    margin: auto 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+    z-index: 4;
+}
+
+.custom-navbar-bg .dropdown-menu a{
+    color: #3a3a3a;
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+.custom-navbar-bg .dropdown li.logout{
+    border-bottom: none;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.custom-navbar-bg .dropdown .logout a.logout-link{
+    background-color: #BF3148;
+    color: white;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 100%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.navbar-toggler-icon span {
+    background-color: white;
+}
+
+.custom-navbar-bg.navbar-scrolled {
+  background-color: #ffffff;
+  border-bottom: 1px solid #BF3148;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-navbar-bg.navbar-scrolled .nav-item a {
+  color: #333; 
+}
+
+.custom-navbar-bg.navbar-scrolled .nav-item a.active {
+  color: #bf3148;
+}
+/* Navbar End */
+
+/* Landing Page Start */
+.landing-page{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-page a{
+    text-decoration: none;
+}
+
+.landing-page .top-right{
+    margin: 0 0 auto auto;
+}
+
+.landing-page .bottom-left{
+    width: 400px;
+    margin: auto auto 0 0;
+    position: relative;
+    right: 50px;
+}
+
+.landing-page img{
+    margin: auto 0 auto 10px;
+}
+
+.landing-page .container{
+    margin: -450px auto -250px auto;
+    z-index: 5;
+}
+
+/* Menu Admin Start */
+.landing-page .menu{
+    display: flex;
+    gap: 20px;
+}
+
+.landing-page .card-menu{ 
+    display: flex;
+    gap: 10px;   
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(6.800000190734863px);
+    width: 431px;
+    height: 180px;
+}
+
+.landing-page .card-menu .teks{
+    margin: auto auto auto 0;
+    max-width: 220px;
+}
+
+.landing-page .card-menu .teks h2{
+    color: white;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 26px;
+    margin: auto 0;
+}
+
+.landing-page .card-menu .teks h3{
+    color: white;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    font-size: 14px;
+    margin: auto 0;
+    max-width: 210px;
+}
+
+.landing-page .menu #menu_caffenchat{
+    display: flex;
+    flex-direction: column;
+}
+.landing-page #menu_caffenchat .notification{
+    background-color: #4B8DD7;
+    width: fit-content;
+    max-width: 360px;
+    height: fit-content;
+    border-radius: 0px 20px 0px 20px;
+    padding: 10px 15px;
+    position: relative;
+    bottom: 20%;
+    left: 1px;
+    margin: 0 0 -70px auto;
+}
+
+.landing-page #menu_caffenchat .notification p{
+    color: white;
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0;
+}
+
+.landing-page .menu #menu_caffenchat .content-menu{
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+/* Menu Admin End */
+
+/* Kritik & Saran Start */
+.kritik-saran{
+    margin-top: 38px;
+}
+
+.kritik-saran h2{
+    color: white;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 35px;
+    margin: auto 0;
+    margin-bottom: 30px;
+}
+
+.kritik-saran .carousel-inner {
+    width: 1120px;
+    margin: auto;
+  }
+  
+  .kritik-saran .carousel-indicators {
+    position: relative;
+    top: 5px;
+  }
+  
+  .kritik-saran .carousel-control-prev{
+    height: 50px;
+    width: 20px;
+    margin: auto;
+  }
+  
+  .kritik-saran .carousel-control-next{
+    height: 50px;
+    width: 20px;
+    margin: auto;
+  }
+  
+  .kritik-saran .carousel-indicators .active {
+    background-color: #ffffff;
+    opacity: 100%;
+  }
+  
+  .kritik-saran .carousel-indicators button {
+    background-color: #a1a1a1;
+    opacity: 100%;
+  }
+
+.kritik-saran .cards-kritiksaran{
+    display: flex;
+    gap: 15px;
+}
+
+.kritik-saran .card-kritiksaran{
+    margin: auto;
+    width: 530px;
+    height: 190px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.kritik-saran  p.no-kritiksaran{
+    color: #ffffff;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.kritik-saran .card-kritiksaran p.nama{
+    color: #BF3148;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 23px;
+    margin: 10px 15px 0 15px;
+}
+
+.kritik-saran .card-kritiksaran p.email{
+    color: #3a3a3a;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 15px;
+}
+
+.kritik-saran .card-kritiksaran p.subject{
+    color: #3a3a3a;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.kritik-saran .card-kritiksaran p.message{
+    color: #3a3a3a;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    font-size: 17px;
+    margin: 0 15px 10px 15px;
+    max-height: 80px;
+    overflow-y: auto;
+}
+
+.kritik-saran .card-kritiksaran p.waktu{
+    color: #3a3a3a;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    font-size: 15px;
+    margin: auto 15px 5px auto;
+}
+
+.kritik-saran .card-kritiksaran p.message::-webkit-scrollbar {
+    width: 5px;
+}
+
+.kritik-saran .card-kritiksaran p.message::-webkit-scrollbar-track {
+    background: rgb(189, 189, 189);
+    border-radius: 5px;
+}
+
+.kritik-saran .card-kritiksaran p.message::-webkit-scrollbar-thumb {
+    background: #F2C029;
+    border-radius: 5px;
+}
+/* Kritik & Saran End */
+/* Landing Page End */

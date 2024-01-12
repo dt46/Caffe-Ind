@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: #BF3148;
+    background-image: url(../assets/bg-kopi-login-long.png);
+}
+
+.data_diri::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/bg_3d_kopi_kanan.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .data_diri::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/bg_3d_kopi_kiri.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+.data_diri{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 5em 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;    
+}
+
+.data_diri .card-form{    
+    border-radius: 1.25em;
+    background: #E6E6E6;
+    margin: auto;
+    max-width: 700px;
+    width: 100%;
+    padding: 1.25em;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.data_diri .form{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.data_diri .container .judul-form h2{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #BF3148;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.data_diri .profile-picture-display{
+    width: 7.5em;
+    height: 7.5em;
+    object-fit: cover;
+    border-radius: 80px;
+    margin: 0 auto;
+    z-index: 4;
+}
+
+.data_diri .form .input-profilepicture h4{
+    font-family: 600;
+    font-size: 1.25rem;
+    color: #BF3148;
+}
+
+.data_diri .form .input-profilepicture .profile-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.data_diri .form .input-profilepicture img{
+    margin: auto auto 0.625em 0.3em;
+    width: 4.375em; /* Mengatur lebar item dengan margin di antara */
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 40px;
+    z-index: 2;
+}
+
+.data_diri .input{
+    width: 100%;
+    height: auto; 
+    margin-bottom: 0.5em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #3A3A3A;
+    background-color: transparent;
+}
+
+.data_diri .form .input h4{
+    font-family: 600;
+    font-size: 1.25rem;
+    color: #BF3148;
+}
+
+.data_diri .form-check{
+    display: flex;
+}
+
+.data_diri .form .input-jeniskelamin h4{
+    font-family: 600;
+    font-size: 1.25rem;
+    color: #BF3148;
+}
+
+.data_diri .form .input-jeniskelamin label{
+    font-family: 300;
+    font-size: 1.25rem;
+    color: #3A3A3A;
+    margin: auto auto auto 5px;
+}
+
+.data_diri .form .input-statuskehamilan h4{
+    font-family: 600;
+    font-size: 1.25rem;
+    color: #BF3148;
+}
+
+.data_diri .form .input-statuskehamilan label{
+    font-family: 300;
+    font-size: 1.25rem;
+    color: #3A3A3A;
+    margin: auto auto auto 5px;
+}
+
+.data_diri .form .input-penyakit h4{
+    font-family: 600;
+    font-size: 1.25rem;
+    color: #BF3148;
+}
+
+.data_diri .form .input-penyakit label{
+    font-family: 300;
+    font-size: 1.25rem;
+    color: #3A3A3A;
+    margin: auto auto auto 5px;
+}
+
+.form-check-input:checked[type="radio"] {
+    background-color: #F2C029;
+    border-color: #F2C029;
+    width: 20px;
+    height: 20px;
+}
+
+.form-check-input[type="radio"]:not(:checked) {
+    background-color: transparent;
+    border-color: #3A3A3A;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.form-check-input:checked[type="checkbox"] {
+    background-color: #F2C029;
+    border-color: #F2C029;
+    width: 20px;
+    height: 20px;
+}
+
+.form-check-input[type="checkbox"]:not(:checked) {
+    background-color: transparent;
+    border-color: #3A3A3A;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.data_diri .input input {
+    background-color: #f2507b00;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: #3A3A3A;
+}
+
+.data_diri input::placeholder {
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: #3A3A3A;
+  }
+
+.data_diri .content-form p{
+    font-family: "Poppins", Helvetica;
+    font-weight: 300;
+    font-size: 0.94rem;
+    color: #3A3A3A;;
+    opacity: 100%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.data_diri .form #button-data-diri{
+    background-color: #F2C029;
+    width: 100%;
+    text-align: center;
+    padding: 0.625em;
+    box-sizing: border-box;
+    border-radius: 0.5em;
+    border: none;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.data_diri .content-form .register{
+    font-family: "Poppins", Helvetica;
+    font-weight: 300;
+    font-size: 0.94rem;
+    color: #F2C029;;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+/* Tablet */
+@media (max-width: 770px) {
+    html{
+        font-size: 66.75%;      
+    }
+
+    .data_diri .card-form{
+        padding: 3em 0;
+    }
+  
+  }
+  
+  /* Mobile Phone */
+  @media (max-width: 450px) {
+    html{
+      font-size: 55%;
+    }
+  }

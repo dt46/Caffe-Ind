@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+/* Navbar Start */
+.custom-navbar-bg {
+    background-color: #BF3148;
+    border-bottom: 1px solid #ffffff;
+    width: 100vw;
+}
+
+.custom-navbar-bg .container-fluid{
+    max-width: 90%
+}
+
+.regular-logo {
+  display: block;
+  width: 6.25em;
+}
+
+.custom-navbar-bg button.navbar-toggler{
+  background-color: #F2C029;
+}
+
+.custom-navbar-bg .nav-item a{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 1rem;
+    opacity: 100%;
+    text-decoration: none;
+    margin: auto;
+}
+
+.custom-navbar-bg .nav-item a.active {
+    color: #F2C029;
+    font-weight: 700;
+}  
+
+.custom-navbar-bg .dropdown li{
+    display: flex;
+    padding: 5px 0px;
+    border-bottom: 1px solid #afafaf;
+}
+
+.custom-navbar-bg .dropdown a{
+    color: #3A3A3A;
+}
+
+.custom-navbar-bg .dropdown img{
+    margin: auto;
+}
+  
+.custom-navbar-bg .profile-picture{
+    margin: auto 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+    z-index: 4;
+}
+  
+.custom-navbar-bg .dropdown-menu a{
+    color: #3a3a3a;
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    font-size: 1rem;
+    opacity: 100%;
+    text-decoration: none;
+}
+  
+.custom-navbar-bg .dropdown li.logout{
+    border-bottom: none;
+    padding: 0;
+    margin: 10px auto;
+}
+  
+.custom-navbar-bg .dropdown .logout a.logout-link{
+    background-color: #BF3148;
+    color: white;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 100%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+  
+.navbar-toggler-icon span {
+    background-color: white;
+}
+/* Navbar End */
+.input .container-inputKopi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.875em;
+    margin-bottom: 50px;
+}
+
+.input .container-inputKopi img{
+    margin: auto;
+    max-width: 10.56em;
+    max-height: 15.56em;
+}
+
+.input .background{
+    background-color: #bf3148;
+    padding-top: 3em;
+    background-image: url(../assets/vektor\ kopi\ large.png);
+    display: flex;
+    flex-direction: column;
+}
+
+.input .card-input{
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(6.800000190734863px);
+    display: flex;
+    width: calc(17.5em - 1.875em);
+    margin-bottom: 1.875em;
+    height: 25em;
+    cursor: pointer;
+}
+
+.card-input.selected {
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    background: #F2C029;
+    backdrop-filter: blur(6.800000190734863px);
+}
+
+.input .container{
+    margin: auto auto 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.input .row{
+    display: flex;
+    gap: 28px;
+    margin: auto;
+    width: 100%;
+}
+
+.input .card-input .content{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 13px auto;
+    width: 90%;
+}
+
+.input h2{
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    color: white;
+    font-size: 4.375rem;
+    width: 80%;
+    margin: auto auto 4.375rem auto;   
+    text-align: center;
+
+}
+
+.input h5{
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    color: white;
+    font-size: 1.875rem;
+    margin: auto;   
+    text-align: center;
+    width: 90%;
+}
+
+.input .info-lebihlanjut{
+    width: 100%;
+    display: flex;
+}
+
+.input .info-lebihlanjut .content-form{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    background-image: url(../assets/coffe\ kuning.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.input .info-lebihlanjut .card-form{
+    background-color: black;
+    margin: auto 0;
+    padding: 50px;
+    z-index: 3;
+    width: 60%;
+}
+
+.input .info-lebihlanjut .form-info-lebihlanjut{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.input .info-lebihlanjut .card-form h4{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: #F2C029;
+    font-size: 1.875rem;
+    text-align: left;    
+}
+
+.input .info-lebihlanjut .card-form h3{
+    width: 100%;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 0.56em;
+}
+
+.input .input-lebihlanjut p{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: #F2C029;
+    font-size: 1.25rem;
+    margin: auto 0;
+}
+
+.input .input-field p{
+    font-family: "Poppins", Helvetica;
+    font-weight: 300;
+    color: black;
+    font-size: 1.25rem;
+    margin: auto 0;
+}
+
+.input .info-lebihlanjut .input-field{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.625em;
+    border-radius: 8px;
+}
+
+.input .info-lebihlanjut .input-lebihlanjut{
+    background-color: transparent;
+}
+
+.input .info-lebihlanjut .input-lebihlanjut input {
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: #3A3A3A;
+    width: 100%;
+}
+
+.input .input-lebihlanjut input::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: #3A3A3A;
+  }
+
+select.form-select option:checked {
+    background-color: #F2C029;
+    color: #ffffff;
+}
+
+select.form-select option:hover {
+    background-color: #F2C029;
+    color: #ffffff;
+}
+
+.input .input-bahantambahan p{
+    font-family: "Poppins";
+    font-family: 500;
+    font-size: 1.25rem;
+    color: #F2C029;
+    margin: auto 0;
+}
+
+.input .input-bahantambahan .form-check-inline{
+    display: flex;
+    gap: 0.625em;
+}
+
+.input .input-bahantambahan label{
+    font-family: "Poppins";
+    font-family: 300;
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin: auto 0;
+}
+
+.form-check-input:checked[type="checkbox"] {
+    background-color: #F2C029;
+    border-color: #F2C029;
+    width: 20px;
+    height: 20px;
+}
+
+.form-check-input[type="checkbox"]:not(:checked) {
+    background-color: white;
+    border-color: #3A3A3A;
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+
+.input  input {
+    background-color: #f2507b00;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.input input::placeholder {
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: white;
+  }
+
+
+.input .info-lebihlanjut button{
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    color: white;
+    font-size: 1.25rem;
+    margin: 1.875em auto auto auto;
+    text-decoration: none;
+    border: none;
+    background-color: #F2C029;
+    border-radius: 8px;
+    padding:7px 0px;
+    width: 100%;
+    text-align: center;
+}
+/* Input End */
+
+/* Footer Start */
+footer::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 8em; 
+    top: -5%; 
+    background-image: url(../assets/tekstur\ kertas\ merah.png);
+    background-position: center;
+    background-size: cover;
+    transform: rotate(180deg);
+  }
+  
+  footer{
+    position: relative;
+    background-color: black;
+    background-image: url("../assets/vektor\ kopi\ footer.png");
+  }
+  
+  footer h4{
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+  }
+  
+  footer h5{
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+  }
+  
+  footer p{
+    margin: auto auto auto 0;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: rgb(255, 255, 255);
+  }
+  
+  footer .container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer .row1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 11.875em auto 50px auto;
+  }
+  
+  footer .col{
+    width: auto;
+  }
+  
+  footer .row-icon{
+    display: flex;
+    gap: 10px;
+  }
+  
+  footer #col1 #location img{
+    margin: 0 0 auto 0;
+  }
+  
+  footer #col2 p{
+    margin-bottom: 25px;
+  }
+  
+  footer .socialmedia{
+    display: flex;
+    gap: 19px;
+  }
+  
+  footer #col3 #KopInTouch{
+    margin-bottom: 5px;
+  }
+  
+  footer #col3 #location img{
+    margin: 0 0 auto 0;
+  }
+  
+  footer #col3 #open-hours{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 13px;
+  }
+  
+  footer #col3 #location{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer .row2{
+    margin: auto;
+  }
+  
+  footer .row2 hr{
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    z-index: 2;
+    border: 0;
+  }
+  
+  footer .row2 p{
+    text-align: center;
+  }
+  
+  footer .row2 span{
+    color: #bf3148;
+    font-weight: 700;
+  }
+  /* Footer End */
+
+  /* Tablet */
+@media (max-width: 770px) {
+    html{
+      font-size: 66.75%;
+    }
+  
+    .navbar-collapse{
+      background-color: #ffffff;
+      border-radius: 1em;
+      padding: 2em;
+    }
+  
+    .custom-navbar-bg ul{
+      gap: 1em;
+    }
+  
+    .custom-navbar-bg .nav-item a{
+      color: #3a3a3a;
+    }
+  
+    .custom-navbar-bg a.nav-button{
+      color: white;
+    }
+
+    .landing-page{
+        position: relative;
+        background-image: url(../assets/3dinput.jpg);
+        background-size: cover;
+        background-position:center bottom;
+    }
+
+    .landing-page::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 8em;
+        background-image: url(../assets/tekstur\ kertas.png);
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        bottom: -1%;
+      }
+        
+    .landing-page .content{
+        width: 90%;
+    }
+    
+    .landing-page .header{
+        width: 100%;
+    }
+
+    .input .info-lebihlanjut{
+        width: 100%;
+    }
+    
+    .input .info-lebihlanjut .content-form{
+        background-image: none;
+    }
+    
+    .input .info-lebihlanjut .card-form{
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+    }
+  
+    
+  }
+  
+  /* Mobile Phone */
+  @media (max-width: 450px) {
+    html{
+      font-size: 55%;
+    }
+  }

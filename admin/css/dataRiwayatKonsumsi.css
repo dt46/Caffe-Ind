@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #bf3148;
+    background-image: url(../assets/bg-kopi-login-long.png);
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar Start */
+.custom-navbar-bg {
+    border-bottom: 1px solid #ffffff;
+}
+
+.custom-navbar-bg .container-fluid{
+    max-width: 1200px;
+}
+
+.regular-logo {
+    display: block;
+}
+
+.custom-navbar-bg button.navbar-toggler{
+    background-color: #F2C029;
+}
+
+.custom-navbar-bg .nav-item a{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+    opacity: 100%;
+    text-decoration: none;
+    margin: auto;
+}
+
+.custom-navbar-bg .nav-item a.active {
+    color: #F2C029;
+    font-weight: 700;
+}  
+
+.custom-navbar-bg .dropdown li{
+    display: flex;
+    padding: 5px 0px;
+    border-bottom: 1px solid #afafaf;
+}
+
+.custom-navbar-bg .dropdown a{
+    color: white;
+}
+
+.custom-navbar-bg .dropdown img{
+    margin: auto;
+}
+
+.custom-navbar-bg .profile-picture{
+    margin: auto 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+    z-index: 4;
+}
+
+.custom-navbar-bg .dropdown-menu a{
+    color: #3a3a3a;
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+.custom-navbar-bg .dropdown li.logout{
+    border-bottom: none;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.custom-navbar-bg .dropdown .logout a.logout-link{
+    background-color: #BF3148;
+    color: white;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 100%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.navbar-toggler-icon span {
+    background-color: white;
+}
+
+.custom-navbar-bg.navbar-scrolled {
+    background-color: #BF3148;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+/* Navbar End */
+
+/* Profil User Start */
+.user{
+    display: flex;
+    flex-direction: column;    
+}
+
+.user a{
+    text-decoration: none;
+}
+
+.user img{
+    z-index: -1;
+}
+
+.user .top-right{
+    margin: 0 0 auto auto;
+}
+
+.user .bottom-left{
+    margin: auto auto 0 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: -452px auto;
+    display: flex;  
+}
+
+.user .card-user{
+    border-radius: 30px;
+    background: #E6E6E6;
+    margin: auto;        
+    width: 719px;
+    min-height:477px;
+    padding: 30px 0 30px 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.user .content-card{
+    margin: 0 auto auto auto;
+    width: 93%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user .header{
+    display: flex;    
+    width: 100%;
+}
+
+.user .header img{
+    width: 250px;
+    margin: auto auto auto 0;    
+    z-index: 4;
+}
+
+.user .header h1{
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    color: #bf3148;
+    font-size: 40px;
+    margin: auto;
+}
+
+.user .header a{
+    margin: auto 0;
+}
+
+.user .header i{
+    color: #bf3148;
+    font-size: 30px;
+    margin: auto 0;
+}
+
+.user .profil{
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    gap: 20px;
+}
+
+.user .profil .teks{
+    margin: auto;
+}
+
+.user .profil h2{
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    color: #bf3148;
+    font-size: 25px;
+    margin: auto 0;
+}
+
+.user .profil h3{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: #3a3a3a;
+    font-size: 20px;
+    margin: auto 0;
+}
+
+.user .profile-picture{
+    width: 77px;
+    height: 77px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: auto;
+    z-index: 4;
+}
+
+.user .data-caffetracker h2.judul{
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    color: #BF3148;
+    font-size: 30px;
+    margin: 40px auto 15px auto ;
+    text-align: center;
+}
+
+.user .accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user .accordion-item {
+    border-color: #b4b4b4;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.user .accordion-button {
+    background-color: #ffffff;
+    height: 80px;    
+}
+
+.accordion-button:focus {
+    outline: none; 
+    box-shadow: none;
+}
+
+.user .accordion .date{
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 30px;
+    color: #bf3148;
+    margin: auto;
+}
+
+.user .accordion .status{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;  
+    margin: auto;
+}
+
+/* Isi Accordion Start */
+.user .accordion .coffee{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(58, 58, 58, 0.20);
+}
+
+.user .accordion .informasi-coffee{
+    display: flex;
+    gap: 20px;
+    margin: auto 0;
+}
+
+.user .accordion .informasi-coffee img{
+    width: 75px;
+    margin: auto 0;
+}
+
+.user .informasi-coffee .info-coffee{
+    margin: auto 0;
+}
+
+.user .informasi-coffee ul{
+    display: flex;
+    gap: 50px;
+    margin: auto 0;
+}
+
+.user .informasi-coffee .info-kafein-gula{
+    display: flex;
+    gap: 20px;
+}
+
+.user .informasi-coffee h5{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 30px;
+    color: #3a3a3a;  
+    margin: auto 0;
+}
+
+.user .informasi-coffee span{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 18px;
+    color: #3a3a3a;  
+    margin: auto 0;
+}
+
+.user .informasi-coffee li, p{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+    color: #3a3a3a;  
+    margin: auto 0;
+}
+
+.user .additional{
+    display: flex;
+    gap: 0;
+  }
+  
+  .user .additional p{
+    font-family: "Poppins", Helvetica;
+    color: #1e1b1b;
+    font-weight: 600;
+    font-size: 18px;
+    margin: auto 0;
+  }
+  
+  .user .additional ul{
+    margin: auto 0;
+    display: flex;
+  }
+  
+  .user .additional li{
+    font-family: "Poppins", Helvetica;
+    color: #1e1b1b;
+    font-weight: 400;
+    font-size: 18px;
+    margin: auto 0;
+  }
+
+.user .coffee .date{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+    color: #3a3a3a;  
+    margin: auto 0 auto auto;
+}
+/* Isi Accordion End */

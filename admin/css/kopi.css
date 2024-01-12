@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #bf3148;
+    background-image: url(../assets/bg-kopi-login-long.png);
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar Start */
+.custom-navbar-bg {
+    border-bottom: 1px solid #ffffff;
+    background-color: #BF3148;
+}
+
+.custom-navbar-bg .container-fluid{
+    max-width: 1200px;
+}
+
+.regular-logo {
+    display: block;
+}
+
+.custom-navbar-bg button.navbar-toggler{
+    background-color: #F2C029;
+}
+
+.custom-navbar-bg .nav-item a{
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+    opacity: 100%;
+    text-decoration: none;
+    margin: auto;
+}
+
+.custom-navbar-bg .nav-item a.active {
+    color: #F2C029;
+    font-weight: 700;
+}  
+
+.custom-navbar-bg .dropdown li{
+    display: flex;
+    padding: 5px 0px;
+    border-bottom: 1px solid #afafaf;
+}
+
+.custom-navbar-bg .dropdown a{
+    color: white;
+}
+
+.custom-navbar-bg .dropdown img{
+    margin: auto;
+}
+
+.custom-navbar-bg .profile-picture{
+    margin: auto 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+    z-index: 4;
+}
+
+.custom-navbar-bg .dropdown-menu a{
+    color: #3a3a3a;
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+.custom-navbar-bg .dropdown li.logout{
+    border-bottom: none;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.custom-navbar-bg .dropdown .logout a.logout-link{
+    background-color: #BF3148;
+    color: white;
+    font-family: "Poppins", Helvetica;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 100%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.navbar-toggler-icon span {
+    background-color: white;
+}
+
+.custom-navbar-bg.navbar-scrolled {
+    background-color: #BF3148;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+/* Navbar End */
+
+/* Kopi Start */
+.kopi{
+    display: flex;
+    flex-direction: column;
+}
+
+.kopi a{
+    text-decoration: none;
+}
+
+.kopi img{
+    z-index: -1;
+}
+
+.kopi .top-right{
+    margin: 0 0 auto auto;
+}
+
+.kopi .bottom-left{
+    margin: auto auto 0 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: -450px auto;
+    display: flex;  
+}
+
+.kopi .card-kopi{
+    border-radius: 30px;
+    background: #E6E6E6;
+    margin: auto;        
+    width: 719px;
+    height: 473px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.kopi .search-bar{
+    width: 627px;
+    height: 50px;
+    border: 1px solid #bf3148;
+    border-radius: 30px;
+    margin: 30px auto 30px auto;
+    display: flex;
+}
+
+.kopi .search-bar .fa-magnifying-glass{
+    color: #bf3148;
+    font-size: 20px;
+    margin: auto 0 auto 20px;
+}
+
+.kopi .search-bar input {
+    background-color: transparent;
+    width: 520px;
+    border: none;
+    outline: none;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 20px;
+    color: #3A3A3A;
+    margin: auto auto auto 10px;
+}
+
+.search-bar input::placeholder {
+    font-family: "Poppins", Helvetica;
+    font-weight: 400;
+    color: #bf3148;
+    font-size: 20px;    
+}
+
+.kopi .search-bar button{
+    border: none;
+    background-color: transparent;
+    height: fit-content;
+    margin: auto 20px auto auto;
+}
+
+.kopi .search-bar .fa-xmark{
+    color: #bf3148;
+    font-size: 20px;
+}
+
+.kopi .data-kopi{
+    width: 627px;
+    margin: 0 auto auto auto;
+}
+
+
+.kopi .data-kopi .kopi{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.kopi .kopi::-webkit-scrollbar {
+    width: 5px;
+}
+  
+.kopi .kopi::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 5px;
+}
+  
+.kopi .kopi::-webkit-scrollbar-thumb {
+    background: #F2C029;
+    border-radius: 5px;
+}
+
+.kopi .coffee{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #afafaf;
+    width: 97.4%;
+}
+
+.kopi .coffee .coffee-picture{
+    max-width: 43px;
+    max-height: 70px;
+    object-fit: cover;
+    margin: 0;
+    z-index: 4;
+}
+
+.kopi .data-kopi h3{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 20px;
+    color: #bf3148;
+}
+
+.kopi .data-kopi h5{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
+    color: #3A3A3A;
+    margin: auto 0;
+}
+
+.kopi .button-tambah-kopi{
+    background-color: #F2C029;
+    color: #ffffff;
+    width: 627px;
+    height: 47px;
+    margin: 10px auto 30px auto;
+    border-radius: 8px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    gap: 10px;
+}
+
+.kopi .button-tambah-kopi i{    
+    font-size: 20px;
+    color: #ffffff;
+    margin: auto 0 auto auto;
+}
+
+.kopi .button-tambah-kopi p{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    margin: auto auto auto 0;
+}
+/* Kopi End */
